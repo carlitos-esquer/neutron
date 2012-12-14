@@ -1,0 +1,35 @@
+<html>
+<body>
+<h2>JSON Object Creation in JavaScript</h2>
+<style>
+  span {
+    color: blue;
+  }
+  p { background: white; }
+  div#datos { padding:4; border:2; color: green; background: red; }
+  }
+</style>
+<div id="datos">
+<p>
+Name: <span id="jname"></span><br />  
+Age: <span id="jage"></span><br /> 
+Address: <span id="jstreet"></span><br /> 
+Phone: <span id="jphone"></span><br /> 
+Color: <span id="_color">Un texto simple</span><br />
+</p>  
+</div>
+<script type="text/javascript">
+var Persona = {
+  "name":"Philias Fog",
+  "street":"Oslo West 16", 
+  "age":33,
+  "phone":"555 1234567"};
+document.getElementById("jname").innerHTML=Persona.name  
+document.getElementById("jage").innerHTML=Persona.age  
+document.getElementById("jstreet").innerHTML=Persona.street  
+document.getElementById("jphone").innerHTML=Persona.phone  
+document.getElementById("_color").innerHTML=document.getElementById("datos").style.cssText;
+</script>
+<input type="button" value="Cambiar" onclick="alert("hola");"/>
+</body>
+</html>

@@ -1,0 +1,5 @@
+@etiqueta = "Estimado: #{params[:id]} - Administra tu blog..."
+div :style => "background:blue" do
+	h1 "Administracion del Blog"
+	p @etiqueta
+end
