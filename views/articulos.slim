@@ -1,7 +1,7 @@
 h1 = @titulo
+a href="/#{params[:id]}/#{params[:blog]}/articulos/new" Nuevo Artículo
 p
 - @articulos.each do |articulo|
   p = articulo.titulo
   p = articulo.contenido
 p
-a href="/#{params[:id]}/#{params[:blog]}/articulos/new" Nuevo Artículo
