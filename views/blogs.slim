@@ -1,4 +1,7 @@
-h1 Estos son los Blogs del usuario
+h1 Estos son los Blogs del usuario #{@id_usuario}
 h2 Activos
 - @blogs.each do |b|
-  p = b.titulo
+	p = b.id
+	p = b.titulo
+	a href="/#{@id_usuario}/#{b.id}/articulos/new" Agregar
+	
