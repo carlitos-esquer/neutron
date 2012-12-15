@@ -67,6 +67,14 @@ post '/:id/blogs/new' do
 	redirect "/#{params[:id]}/blogs"
 end
 
+get '/:id/:blog/edit' do
+	slim :blog_edit
+end
+
+post '/:id/:blog/edit' do
+	"<h2>El blog se ha actualizado...<h2>"
+end
+
 get '/:id/news' do
 	noticias params
 end
