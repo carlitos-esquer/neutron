@@ -1,7 +1,7 @@
 require './perfil'
 require './blog'
 #Clase que define un usuario de nuestros Blogs
-
+#Clase Original que ya no se utiliza
 class Usuario
   attr_accessor :cuenta,:email,:perfil,:blogs
   def initialize cuenta,email
